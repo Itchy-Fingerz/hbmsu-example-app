@@ -2,7 +2,7 @@
     <img src="http://cdn2.eegeo.com/wp-content/uploads/2017/04/WRLD_Blue.png"  align="right" height="80px" />
 </a>
 
-# WRLD Example App
+# HBMSU Example App
 
 ![WRLD](http://cdn2.eegeo.com/wp-content/uploads/2017/04/screenselection01.png)
 
