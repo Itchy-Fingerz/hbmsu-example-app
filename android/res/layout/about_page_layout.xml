@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/about_page_view">
+    
+    <LinearLayout
+   		android:id="@+id/about_page_view_container"
+    	android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+    	android:layout_centerInParent="true"
+	    android:orientation="vertical"
+        android:background="@color/gold">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+            android:background="@color/white">
+            
+            <!--  Scrolling icontent -->
+            
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            
+	            <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="10dp"
+	                android:orientation="vertical"
+	                android:clickable="true">
+	                
+	                <!--  About text  -->
+	                
+	                <TextView
+	                    android:id="@+id/about_page_view_developed_by_text"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="@color/darkgrey"
+	                    android:textSize="14dp"
+	                    android:layout_marginTop="50dp"
+						android:layout_marginBottom="0dp"
+						android:paddingBottom="10dp"
+	                    android:text="Developed by"
+	                    android:gravity="left" />
+
+	                <ImageView
+	                    android:id="@+id/about_page_eegeo_logo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:contentDescription="Eegeo Logo"
+						android:paddingBottom="10dp"
+						android:layout_marginTop="0dp"
+						android:layout_marginBottom="0dp"
+	                    android:gravity="left"
+	                    android:layout_gravity="left"
+	                    android:src="@drawable/eegeo_logo_about" />
+	                
+	                <TextView
+	                    android:id="@+id/about_page_view_about_text"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="@color/darkgrey"
+	                    android:textSize="14dp"
+						android:layout_marginTop="0dp"
+						android:paddingTop="0dp"
+	                    android:gravity="left"/>
+	                
+	                <TextView
+	                    android:id="@+id/about_page_view_about_text_eula_link"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/eula_link"
+	                    android:textColor="@color/blue"
+						android:linksClickable="true"
+	                    android:textSize="14dp"
+	                    android:gravity="left"/>
+	                
+	                <TextView
+	                    android:id="@+id/about_page_view_privacy_link"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:paddingTop="5dp"
+	                    android:textSize="14dp"
+	                    android:text="@string/privacy_link"
+	                    android:textColor="@color/blue"
+						android:linksClickable="true"
+	                    android:gravity="left"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:id="@+id/about_page_view_legal_link"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:paddingTop="5dp"
+	                    android:textSize="14dp"
+	                    android:text="@string/legal_link"
+	                    android:textColor="@color/blue"
+						android:linksClickable="true"
+	                    android:gravity="left"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:id="@+id/about_page_view_team_link"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:paddingTop="5dp"
+	                    android:textSize="14dp"
+	                    android:text="@string/team_link"
+	                    android:textColor="@color/blue"
+						android:linksClickable="true"
+	                    android:gravity="left"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	            </LinearLayout>
+            </ScrollView>
+            
+        </RelativeLayout>
+        
+        <!--  Bottom bar with close button -->
+        <RelativeLayout
+ 		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content">
+            
+            <ImageView
+			   android:id="@+id/about_page_view_close_button"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_alignParentRight="true"
+		       android:background="@drawable/menu_button_color_states"
+	  	 	   android:src="@drawable/button_pin_close_states" />
+            
+         </RelativeLayout>
+	        
+	</LinearLayout>
+  
+</RelativeLayout>
